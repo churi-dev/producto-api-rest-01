@@ -19,7 +19,7 @@ namespace producto_api_rest_01
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("EFCoreDBConnection")));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             
             builder.Services.AddScoped<ProductoService>();
